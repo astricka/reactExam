@@ -1,9 +1,11 @@
 import React from 'react';
+import Categories from "./components/Categories";
 
 function Task2() {
   return (
     <div>
       <h3>Task 2</h3>
+        <Categories />
     </div>
   );
 }

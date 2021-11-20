@@ -1,0 +1,22 @@
+img {
+    max-height: 200px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.container div {
+    padding: 0.5rem;
+}
+
+main {
+    text-align: center;
+}
+
