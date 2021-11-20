@@ -11,11 +11,22 @@ import Task7 from './exam-tasks/task-7/Task7';
 import Task8 from './exam-tasks/task-8/Task8';
 import Task9 from './exam-tasks/task-9/Task9';
 import Task10 from './exam-tasks/task-10/Task10';
+import { Route, Switch } from "react-router-dom";
+import AboutUs from "./exam-tasks/task-1/Pages/AboutUs";
+import Contacts from "./exam-tasks/task-1/Pages/Contacts";
 
 function App() {
   return (
     <div className='App'>
       <Task1 />
+        <Switch>
+            <Route path='/aboutUs'>
+                <AboutUs />
+            </Route>
+            <Route path='/contacts'>
+                <Contacts />
+            </Route>
+        </Switch>
       <hr />
 
       <Task2 />
