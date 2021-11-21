@@ -1,9 +1,25 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
 function Task7() {
+
+    const myRef = useRef(0);
+
+    const changeDarkTheme = () => {
+        myRef.current.style.backgroundColor = "#000000";
+        myRef.current.style.color = "#f1f1f1";
+    }
+
+    const changeLightTheme = () => {
+        myRef.current.style.backgroundColor = "#f1f1f1";
+        myRef.current.style.color = "#0000";
+    }
+
   return (
-    <div>
+    <div style={{width: '300px'}} ref={myRef}>
       <h3>Task 7</h3>
+        <h1>Some text</h1>
+        <button onClick={changeLightTheme}>Light theme</button>
+        <button onClick={changeDarkTheme}>Dark theme</button>
     </div>
   );
 }
