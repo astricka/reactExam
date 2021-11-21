@@ -8,8 +8,6 @@ function Table() {
         fetchedData(setDataFromFetch);
     }, []);
 
-    console.log(dataFromFetch)
-
     return(
         <main>
             <table>

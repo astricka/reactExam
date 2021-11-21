@@ -2,11 +2,30 @@ import React, { Component } from 'react';
 import Card from './Card';
 
 export default class Task9 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      todos: [],
+    };
+  }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/todos')
+        .then((resp) => resp.json())
+        .then(data => {
+          const slicedData = data.slice(0, 5);
+          this.setState({ todos: slicedData });
+        })
+  }
+
   render() {
     return (
       <div>
         <h3>Task 9</h3>
-        {/*<Card />*/}
+        {this.state.todos.map((item) => (
+            <Card key={item.id} title={item.title} completed={item.completed.toString()}/>
+        ))}
+        <Card />
       </div>
     );
   }

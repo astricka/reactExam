@@ -1,13 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import CompA from './CompA';
 import CompB from './CompB';
 
 function Task8() {
-  return (
+    const [counter, setCounter] = useState(0);
+    return (
     <div>
       <h3>Task 8</h3>
-      {/*<CompA />*/}
-      {/*<CompB />*/}
+      <CompA />
+      <CompB />
     </div>
   );
 }
