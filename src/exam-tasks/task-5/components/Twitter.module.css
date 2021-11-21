@@ -1,0 +1,26 @@
+.btnBlue {
+    color: white;
+    background-color: #1dcaff;
+    width: 250px;
+    border: 1px white solid;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.btnWhite {
+    color: #1dcaff;
+    background-color: white;
+    width: 250px;
+    border: 1px #1dcaff solid;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    margin-left: 1rem;
+    font-family: "American Typewriter";
+}

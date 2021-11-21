@@ -1,4 +1,5 @@
 import React from 'react';
+import LikeDislike from "./component/LikeDislike";
 
 function Task4() {
   return (

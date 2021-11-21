@@ -1,9 +1,11 @@
 import React from 'react';
+import Twitter from "./components/Twitter";
 
 function Task5() {
   return (
     <div>
       <h3>Task 5</h3>
+        <Twitter />
     </div>
   );
 }
