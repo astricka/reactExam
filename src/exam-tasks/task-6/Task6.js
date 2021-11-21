@@ -1,9 +1,11 @@
 import React from 'react';
+import Table from './components/Table';
 
 function Task6() {
   return (
     <div>
       <h3>Task 6</h3>
+        <Table />
     </div>
   );
 }
