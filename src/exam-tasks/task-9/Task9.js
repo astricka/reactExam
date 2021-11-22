@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import styled from "styled-components";
+
+const Container = styled.div`
+  text-align: center;
+  margin: 0 auto;
+`;
+
+const Table = styled.table`
+  margin: 0 auto;
+`
 
 export default class Task9 extends Component {
   constructor(props) {
@@ -20,12 +30,18 @@ export default class Task9 extends Component {
 
   render() {
     return (
-      <div>
+      <Container>
         <h3>Task 9</h3>
+          <Table>
+              <tr>
+                  <th>Title</th>
+                  <th>Complete status</th>
+              </tr>
               {this.state.todos.map((item) => (
                   <Card key={item.id} title={item.title} completed={item.completed ? 'yes' : 'no'}/>
               ))}
-      </div>
+          </Table>
+      </Container>
     );
   }
 }

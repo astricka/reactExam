@@ -17,10 +17,10 @@
     margin-top: 0.5rem;
 }
 
-main {
+.main {
     display: flex;
     flex-flow: column;
     text-align: left;
-    margin-left: 1rem;
+    margin-left: 4rem;
     font-family: "American Typewriter";
 }

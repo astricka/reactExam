@@ -4,7 +4,7 @@ import { FaTwitter } from 'react-icons/fa';
 
 function Twitter() {
     return(
-      <main>
+      <main className={css.main}>
           <div><FaTwitter color='#1dcaff' size='50px' /></div>
           <h1>Happening now</h1>
           <h4>Join Twitter today.</h4>
