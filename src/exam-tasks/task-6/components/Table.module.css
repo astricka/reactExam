@@ -8,3 +8,6 @@ tr:nth-child(even) {
 td {
     border: 1px solid #dcdada;
 }
+th {
+    background-color: #8c8787;
+}
