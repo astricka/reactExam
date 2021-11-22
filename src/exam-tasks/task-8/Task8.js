@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
 import CompA from './CompA';
 import CompB from './CompB';
+import {useCounterCtx} from "./store/Context";
 
 function Task8() {
-    const [counter, setCounter] = useState(0);
+    const { counter } = useCounterCtx()
+
     return (
     <div>
       <h3>Task 8</h3>
+        <h1>{counter}</h1>
       <CompA />
       <CompB />
     </div>

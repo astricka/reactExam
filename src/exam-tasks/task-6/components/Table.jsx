@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import TableData from "./TableData";
 import {fetchedData} from "../utils/fetch";
+import css from './Table.module.css';
 
 function Table() {
     const [dataFromFetch, setDataFromFetch] = useState([]);

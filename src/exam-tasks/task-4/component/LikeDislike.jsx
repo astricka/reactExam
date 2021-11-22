@@ -35,15 +35,14 @@ function LikeDislike() {
     return(
       <main className={css.mainContainer}>
           <div className={css.container}>
-              <button onClick={() => active !== "like"? dispatch({ type: 'LIKE' }) : null}>
+              <button className={css.btn} onClick={() => active !== "like"? dispatch({ type: 'LIKE' }) : null}>
                   <FaThumbsUp style={{ color: active === "like" ? "blue" : "grey" }} className={css.icons} />
                   {likes}
               </button>
-              <button onClick={() => active !== "dislike"? dispatch({ type: 'DISLIKE' }) : null}>
+              <button className={css.btn} onClick={() => active !== "dislike"? dispatch({ type: 'DISLIKE' }) : null}>
                   <FaThumbsDown style={{ color: active === "dislike" ? "blue" : "grey" }} className={css.icons} />
                   {dislikes}
               </button>
-              {/*<button><FaThumbsDown className={css.icons} /></button>*/}
           </div>
       </main>
     );
