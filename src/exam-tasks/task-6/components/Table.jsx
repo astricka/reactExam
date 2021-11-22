@@ -11,7 +11,7 @@ function Table() {
 
     return(
         <main>
-            <table>
+            <table className={css.table}>
                 <tr>
                     <th>Name</th>
                     <th>Email</th>

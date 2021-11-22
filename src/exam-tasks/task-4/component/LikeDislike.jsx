@@ -26,6 +26,7 @@ function likeDislikeReducer(state, action) {
                 likes: active === "like" ? likes - 1 : likes,
                 active: "dislike",
             }
+        default: return state;
     }
 }
 function LikeDislike() {

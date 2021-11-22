@@ -8,6 +8,7 @@ Because it didn’t get the context.
 
 Jūsų paaiškinimas:
 
-Nes nebuvo componentui priskirtas React context.
+Nes joke nebuvo componentui priskirtas su React useContext, o kiti gavo ir suprato.
+Gal taip :D
 
 */

@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 
 const CounterContext = React.createContext({
     onIncrement: () => {},
@@ -6,7 +6,7 @@ const CounterContext = React.createContext({
 });
 
 const CounterProvider = ({ children, initialCount = 0 }) => {
-    const [counter, setCounter] = React.useState(initialCount);
+    const [counter, setCounter] = useState(initialCount);
 
     const onIncrement = () => setCounter(counter + 10);
     const onDecrement = () => setCounter(counter - 10);

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useCounterCtx} from "./store/Context";
+import { useCounterCtx } from "./store/Context";
 
 function CompA1() {
     const { onIncrement, counter } = useCounterCtx()

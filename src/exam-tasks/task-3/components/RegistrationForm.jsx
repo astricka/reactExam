@@ -1,4 +1,5 @@
 import {useState} from "react";
+import css from './RegistrationForm.module.css';
 
 function RegistrationForm() {
     const [name, setName] = useState('');
@@ -13,7 +14,7 @@ function RegistrationForm() {
     }
 
     return(
-        <main>
+        <main className={css.container}>
             <form onSubmit={submitHandler}>
                 <input 
                     type="text"
@@ -23,7 +24,7 @@ function RegistrationForm() {
                 />
                 <input
                     type="text"
-                    placeholder="Your sur name"
+                    placeholder="Your surname"
                     value={surName}
                     onChange={(e) => setSurName(e.target.value)}
                 />

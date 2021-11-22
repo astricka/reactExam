@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import CompA from './CompA';
 import CompB from './CompB';
 import {useCounterCtx} from "./store/Context";
