@@ -1,0 +1,26 @@
+.mainContainer {
+    display: flex;
+    align-items: center;
+    background-color: #cccccc;
+    padding: 1rem   ;
+}
+
+.container {
+    text-align: center;
+    padding: 1rem;
+    background-color: snow;
+    width: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icons {
+    color: grey;
+    background-color: white;
+    font-size: 1rem;
+}

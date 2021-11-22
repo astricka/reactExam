@@ -5,7 +5,7 @@ export default class Task9 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todos: [],
+        todos: [],
     };
   }
 
@@ -23,7 +23,7 @@ export default class Task9 extends Component {
       <div>
         <h3>Task 9</h3>
         {this.state.todos.map((item) => (
-            <Card key={item.id} title={item.title} completed={item.completed.toString()}/>
+            <Card key={item.id} title={item.title} completed={item.completed ? 'yes' : 'no'}/>
         ))}
         <Card />
       </div>

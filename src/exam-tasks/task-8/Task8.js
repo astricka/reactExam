@@ -21,9 +21,9 @@ task-8 aplanke rasite kelis komponetus. Task8 komponente, turi būti atvaizduoja
 ir CompB (viduje turi <h2>CompB</h2>).
 
 Task8 komponentų medis
-- CompA
--- CompA1
-- CompB
+- CompA -
+-- CompA1 - button
+- CompB - button
 
 Task8 viduje bus sukurtas Counter state'as, kuri bus galima valdyti iš CompA1 ir CompB
 State'as bus valdomas su mygtkais, kurie leis state'ą padidinti 10 taškų arba pamažinti 10.
