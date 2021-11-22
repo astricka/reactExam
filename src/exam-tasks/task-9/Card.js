@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import css from './Card.module.css';
+import styled from "styled-components";
+
+const Li = styled.li`
+    padding: 5px;
+`;
 
 export default class Card extends Component {
   render() {

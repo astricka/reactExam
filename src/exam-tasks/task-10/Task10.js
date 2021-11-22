@@ -3,9 +3,11 @@
 su React.js ir jis nesijuokia, nes nesuprata jo. Paaiškinkite žemiau jį jam
 
 JOKE:
-Why couldn’t the React component understand the joke? 
+Why couldn’t the React component understand the joke?
 Because it didn’t get the context.
 
 Jūsų paaiškinimas:
+
+Nes nebuvo componentui priskirtas React context.
 
 */

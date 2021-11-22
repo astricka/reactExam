@@ -22,10 +22,9 @@ export default class Task9 extends Component {
     return (
       <div>
         <h3>Task 9</h3>
-        {this.state.todos.map((item) => (
-            <Card key={item.id} title={item.title} completed={item.completed ? 'yes' : 'no'}/>
-        ))}
-        <Card />
+              {this.state.todos.map((item) => (
+                  <Card key={item.id} title={item.title} completed={item.completed ? 'yes' : 'no'}/>
+              ))}
       </div>
     );
   }

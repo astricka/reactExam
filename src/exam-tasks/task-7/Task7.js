@@ -15,7 +15,7 @@ function Task7() {
     }
 
   return (
-    <div style={{width: '300px'}} ref={myRef}>
+    <div style={{width: '300px', textAlign:'center'}} ref={myRef}>
       <h3>Task 7</h3>
         <h1>Some text</h1>
         <button onClick={changeLightTheme}>Light theme</button>
